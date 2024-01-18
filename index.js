@@ -5,7 +5,7 @@ try {
   const nameToGreet = core.getInput('who-to-greet');
   console.log(`Hello ${nameToGreet}!`);
   const labels = core.getInput('labels');
-  core.setOutput("labels", labels);
+  core.setOutput("newlabels", labels);
 } catch (error) {
   core.setFailed(error.message);
 }
